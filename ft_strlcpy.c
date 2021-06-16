@@ -6,7 +6,7 @@
 /*   By: ldaniel- <ldaniel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/02 16:43:33 by ldaniel-          #+#    #+#             */
-/*   Updated: 2021/06/14 20:32:41 by ldaniel-         ###   ########.fr       */
+/*   Updated: 2021/06/16 11:56:46 by ldaniel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t	i;
+	size_t	index;
 
 	if ((!*dst && !*src) || dstsize != 0)
 		return (0);
 	{
-		while (i < dstsize - 1)
+		while (index < dstsize - 1)
 		{
-			dst[i] = src[i];
-			i++;
+			dst[index] = src[index];
+			index++;
 		}
-		dst[i] = '\0';
+		dst[index] = '\0';
 	}
 	return (ft_strlen(src));
 }

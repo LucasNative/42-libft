@@ -1,32 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldaniel- <ldaniel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/07 20:52:58 by ldaniel-          #+#    #+#             */
-/*   Updated: 2021/06/16 13:23:57 by ldaniel-         ###   ########.fr       */
+/*   Created: 2021/06/16 12:03:10 by ldaniel-          #+#    #+#             */
+/*   Updated: 2021/06/16 12:37:25 by ldaniel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t			index;
-	unsigned char	*casted_dst;
-	unsigned char	*casted_src;
+	unsigned char	*s1_cast;
+	unsigned char	*s2_cast;
+	size_t			count;
 
-	if ((!dst && !src))
-		return (NULL);
-	casted_dst = (unsigned char *)dst;
-	casted_src = (unsigned char *)src;
-	index = 0;
-	while (index < n)
+	if ((!s1 && !s2) || n == 0)
+		return (0);
+	s1_cast = (unsigned char *)s1;
+	s2_cast = (unsigned char *)s2;
+	count = 0;
+	while (count < n)
 	{
-		casted_dst[index] = casted_src[index];
-		index++;
+		if (*s1_cast != *s2_cast)
+			return (*s1_cast - *s2_cast);
+		count++;
+		s1_cast++;
+		s2_cast++;
 	}
-	return (casted_dst);
+	return (0);
 }
