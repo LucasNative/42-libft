@@ -1,31 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldaniel- <ldaniel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/06/03 13:44:52 by ldaniel-          #+#    #+#             */
-/*   Updated: 2021/06/18 19:40:07 by ldaniel-         ###   ########.fr       */
+/*   Created: 2021/06/19 12:11:18 by ldaniel-          #+#    #+#             */
+/*   Updated: 2021/06/19 20:22:51 by ldaniel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned char	*s1_cast;
-	unsigned char	*s2_cast;
-	size_t			i;
+	char			*substring;
+	size_t			size;
+	unsigned int	i;
 
+	if (!s)
+		return (NULL);
 	i = 0;
-	s1_cast = (unsigned char *)s1;
-	s2_cast = (unsigned char *)s2;
-	while (i < n && (s1_cast[i] != '\0' || s2_cast[i] != '\0'))
+	size = ft_strlen(s + start);
+	if (size < len)
+		len = size;
+	substring = (char *)malloc((len + 1) * sizeof(char));
+	if (substring == NULL)
+		return (NULL);
+	while ((i < len) && ((start + i) < ft_strlen(s)) && (s[start + i] != '\0'))
 	{
-		if (s1_cast[i] != s2_cast[i])
-			return (s1_cast[i] - s2_cast[i]);
+		substring[i] = s[start + i];
 		i++;
 	}
-	return (0);
+	substring[i] = '\0';
+	return (substring);
 }
