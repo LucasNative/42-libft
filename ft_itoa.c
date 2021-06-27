@@ -6,7 +6,7 @@
 /*   By: ldaniel- <ldaniel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 21:08:27 by ldaniel-          #+#    #+#             */
-/*   Updated: 2021/06/27 20:25:04 by ldaniel-         ###   ########.fr       */
+/*   Updated: 2021/06/27 20:52:07 by ldaniel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,12 +43,12 @@ char	*ft_itoa(int n)
 		return (NULL);
 	if (n == 0)
 		str[--size] = (n % 10) + '0';
-	if (n < 0)
-		str[0] = '-';
 	while (n != 0)
 	{
 		str[--size] = (n % 10) + '0';
 		n = n / 10;
 	}
+	if (n < 0)
+		str[0] = '-';
 	return (str);
 }
