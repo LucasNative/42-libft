@@ -6,7 +6,7 @@
 /*   By: ldaniel- <ldaniel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/23 21:08:27 by ldaniel-          #+#    #+#             */
-/*   Updated: 2021/06/27 21:02:06 by ldaniel-         ###   ########.fr       */
+/*   Updated: 2021/06/27 21:14:57 by ldaniel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,11 @@ char	*ft_itoa(int n)
 {
 	char	*str;
 	size_t	size;
+	size_t	bign;
 	int		signal;
 
 	signal = 0;
+	bign = n;
 	size = int_len(n);
 	if (n < 0)
 	{
