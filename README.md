@@ -13,7 +13,7 @@ My very first own C library
   git clone https://github.com/LucasNative/42-libft.git libft 
   ~~~
   4. Chance for _libft_ directory.
-  5. Execute this for compile:
+  * For compile, type:
   ~~~
   make all
   ~~~
