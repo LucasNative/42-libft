@@ -6,14 +6,14 @@ My very first own C library
   _This library has been tested in MacOs and Linux environment_
   
 ### How to use:
-  . Open a Terminal.
-  . Change to a directory you want to use. 
-  . Clone:
+  1. Open a Terminal.
+  2. Change to a directory you want to use. 
+  3. Clone:
   ~~~ 
   git clone https://github.com/LucasNative/42-libft.git libft 
   ~~~
-  . Chance for _Libft_ directory.
-  . Execute this for compile:
+  4. Chance for _Libft_ directory.
+  5. Execute this for compile:
   ~~~
   make all
   ~~~
@@ -30,4 +30,4 @@ My very first own C library
   make re
   ~~~
   
-  **Any problem? Send me a message on instagra [@lucasnative](https://www.instagram.com/lucasnative/) || twitter [@lucasdanielsan](https://twitter.com/LucasDanielSan) I will be grateful to answer! :)
+  **Any problem? Send me a message on Instagram [@lucasnative](https://www.instagram.com/lucasnative/) || Twitter [@lucasdanielsan](https://twitter.com/LucasDanielSan) I will be grateful to answer! :)**
