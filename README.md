@@ -5,7 +5,7 @@ My very first own C library
   This projec is part of <a href="https://www.42sp.org.br/">42 São Paulo</a> cursus. Libft aims to code a C library regrouping usual functions.
   
   
-  _This library has been tested in MacOs and Linux environment_
+  _This library has been tested in MacOs and Linux environment._
   
 ### How to use:
   1. Open terminal.
@@ -19,7 +19,7 @@ My very first own C library
   ~~~
   make all
   ~~~
-  * For clean the objecs _*.o_:
+  * For clean the objecs files _*.o_:
   ~~~
   make clean
   ~~~
