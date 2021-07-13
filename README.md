@@ -23,7 +23,7 @@ My very first own C library
   ~~~
   make clean
   ~~~
-  * For clean all compile files:
+  * For clean all compiled files:
   ~~~
   make fclean
   ~~~
@@ -32,9 +32,12 @@ My very first own C library
   make re
   ~~~
   
-  Don't forget to include the _header_ on your project:
+  include this header:
   ~~~
   #include "libft.h"
   ~~~
-  
+  Compile your project using _libft.a_ file, like this:
+  ~~~
+  gcc main.c libft.a
+  ~~~
 **Any problem? Send me a message on Instagram [@lucasnative](https://www.instagram.com/lucasnative/) || Twitter [@lucasdanielsan](https://twitter.com/LucasDanielSan) I will be grateful to answer! :)**
