@@ -2,7 +2,7 @@
 My very first own C library 
 
 ### About:
-  This projec is part of <a href="https://www.42sp.org.br/">42 São Paulo</a> cursus. Libft aims to code a C library regrouping usual functions.
+  This projec is part of <a href="https://www.42sp.org.br/">42 São Paulo</a> cursus. Libft aims to code a C library regrouping usual functions.&nbsp
   _This library has been tested in MacOs and Linux environment_
   
 ### How to use:
@@ -30,7 +30,7 @@ My very first own C library
   make re
   ~~~
   
-  #### Don't forget to include the _header_ on your project:
+  ###### Don't forget to include the _header_ on your project:
   ~~~
   #include "libft.h"
   ~~~
