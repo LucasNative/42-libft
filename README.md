@@ -6,13 +6,13 @@ My very first own C library
   _This library has been tested in MacOs and Linux environment_
   
 ### How to use:
-  1. Open a Terminal.
+  1. Open terminal.
   2. Change to a directory you want to use. 
   3. Clone:
   ~~~ 
   git clone https://github.com/LucasNative/42-libft.git libft 
   ~~~
-  4. Chance for _Libft_ directory.
+  4. Chance for _libft_ directory.
   5. Execute this for compile:
   ~~~
   make all
