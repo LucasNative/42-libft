@@ -30,4 +30,9 @@ My very first own C library
   make re
   ~~~
   
+  #### Don't forget to include the _header_ on your project:
+  ~~~
+  #include "libft.h"
+  ~~~
+  
   **Any problem? Send me a message on Instagram [@lucasnative](https://www.instagram.com/lucasnative/) || Twitter [@lucasdanielsan](https://twitter.com/LucasDanielSan) I will be grateful to answer! :)**
