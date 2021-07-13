@@ -6,7 +6,7 @@
 /*   By: ldaniel- <ldaniel-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/07 20:08:08 by ldaniel-          #+#    #+#             */
-/*   Updated: 2021/06/14 16:31:56 by ldaniel-         ###   ########.fr       */
+/*   Updated: 2021/07/13 18:58:02 by ldaniel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,12 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	count;
+	size_t	i;
 
-	count = 0;
-	while (*s != '\0')
+	i = 0;
+	while (s[i] != '\0')
 	{
-		s++;
-		count++;
+		i++;
 	}
-	return (count);
+	return (i);
 }
