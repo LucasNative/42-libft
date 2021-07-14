@@ -1,18 +1,18 @@
 # 42-libft
-My very first own C library 
+My very first own C library
 
 ### About:
-  This projec is part of <a href="https://www.42sp.org.br/">42 São Paulo</a> cursus. Libft aims to code a C library regrouping usual functions.
-  
-  
+  This project is part of <a href="https://www.42sp.org.br/">42 São Paulo</a> cursus. Libft aims to code a C library regrouping usual functions.
+
+
   _This library has been tested in MacOs and Linux environment._
-  
+
 ### How to use:
   1. Open terminal.
-  2. Change to a directory you want to use. 
+  2. Change to a directory you want to use.
   3. Clone:
-  ~~~ 
-  git clone https://github.com/LucasNative/42-libft.git libft 
+  ~~~
+  git clone https://github.com/LucasNative/42-libft.git libft
   ~~~
   4. Chance for _libft_ directory.
   * For compile, type:
@@ -31,12 +31,12 @@ My very first own C library
   ~~~
   make re
   ~~~
-  
+
   include this header:
   ~~~
   #include "libft.h"
   ~~~
-  Compile your project using _libft.a_ file, like this:
+  Compile your project using _libft.a_ file, exemple:
   ~~~
   gcc main.c libft.a
   ~~~
