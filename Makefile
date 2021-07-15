@@ -6,7 +6,7 @@
 #    By: ldaniel- <ldaniel-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/06/02 16:56:51 by ldaniel-          #+#    #+#              #
-#    Updated: 2021/06/25 13:37:15 by ldaniel-         ###   ########.fr        #
+#    Updated: 2021/07/13 21:29:16 by ldaniel-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ FILES	= ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memc
 		ft_strnstr.c ft_strchr.c ft_strrchr.c ft_strlcat.c ft_memcmp.c ft_memccpy.c \
 		ft_memmove.c ft_bzero.c ft_memchr.c ft_atoi.c ft_calloc.c ft_strdup.c \
 		ft_putchar_fd.c ft_putendl_fd.c ft_putstr_fd.c ft_substr.c ft_strjoin.c ft_strtrim.c \
-		ft_split.c ft_itoa.c ft_putnbr_fd.c ft_strmapi.c \
+		ft_split.c ft_itoa.c ft_putnbr_fd.c ft_strmapi.c ft_puts.c ft_intlen.c ft_strclen.c \
 
 all: ${NAME}
 
